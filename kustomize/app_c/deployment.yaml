@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aap-c
+  labels:
+    app: app-c
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-c
+  template:
+    metadata:
+      labels:
+        app: app-c
+    spec:
+      containers:
+        - name: app-c
+          image: APP_IMAGE_URL
+          ports:
+            - containerPort: 80

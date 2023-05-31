@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-b
+spec:
+  ports:
+    - name: svc-b
+      port: 80
+      protocol: TCP
+      targetPort: 80
+  selector:
+    app: app-b
+  type: ClusterIP

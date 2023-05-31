@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aap-d
+  labels:
+    app: app-d
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-d
+  template:
+    metadata:
+      labels:
+        app: app-d
+    spec:
+      containers:
+        - name: app-d
+          image: APP_IMAGE_URL
+          ports:
+            - containerPort: 80
