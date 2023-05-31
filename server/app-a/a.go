@@ -69,7 +69,7 @@ func startServiceA(svc *sqs.SQS) {
 
 func sendMessageToServiceB(message string) string {
     // Service B 的 URL
-    url := "http://app-b:8081" // 替换为 Service B 的实际 URL
+    url := "http://app-b" // 替换为 Service B 的实际 URL
 
     // 构建请求体
     reqBody := []byte(message)
