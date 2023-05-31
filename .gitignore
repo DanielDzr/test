@@ -1,1 +1,32 @@
 .idea/
+*.iws
+*.iml
+*.ipr
+
+# Compiled Output
+/out/
+
+# Gradle files
+.gradle/
+build/
+
+# Maven files
+/target/
+
+# Other ignored files
+*.log
+*.bak
+*.swp
+*~.nib
+local.properties
+*.pyc
+*.class
+*.DS_Store
+*.aux
+*.lof
+*.lol
+*.lot
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
