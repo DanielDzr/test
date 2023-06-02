@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - svc.yaml
+  - istio-dr.yaml
 
 images:
   - name: APP_IMAGE_URL
